@@ -1,0 +1,607 @@
+:root {
+    --rojoO: #73141B;
+    --rojoC: #F20505;
+    --rojoM: #F22738;
+    --negro: #0D0D0D;
+    --gris: #EBEBEB;
+    --blanco: #FFFFFF;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url('../assets/Banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.banner .background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .background .border_dark {
+    width: 90%;
+    height: 90%;
+    border: 2px solid var(--rojoO);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .background .border_dark .content_banner {
+    width: 90%;
+    height: 90%;
+    border: 3px solid var(--rojoM);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+.color {
+    width: 30% !important;
+    background: rgba(235, 235, 235, .5);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_banner p {
+    width: 35%;
+    color: var(--negro);
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding-left: 25px;
+}
+.content_banner .buttons {
+    display: flex;
+    gap: 25px;
+    padding-left: 25px;
+}
+.buttons a{
+    text-decoration: none;
+    color: var(--blanco);
+    background: var(--rojoO);
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: .5s ease-out;
+}
+.buttons a:hover{
+    background: var(--negro);
+    transition: .5s ease-out;
+}
+
+.professionals{
+    height: 500px;
+    width: 100%;
+    background-color: var(--rojoO);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.professionals h3{
+    color: var(--blanco);
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.cards .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: var(--blanco);
+}
+.info span{
+    font-size: 50px;
+}
+.info h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+.info p{
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.images {
+    height: 900px;
+    width: 100%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.images h3 {
+    color: var(--negro);
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.galery {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.galery .galery_top{
+    width: 100%;
+    height: 125px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.galery .galery_bottom{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 50px;
+}
+.galery_bottom .bottom_left{
+    width: 65%;
+}
+.galery_bottom .bottom_right{
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.galery_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--rojoO);
+    background-position: center;
+    background-size: cover;
+}
+.a{
+    background-image: url('../assets/Imagen Galeria 2.png');
+}
+.b{
+    background-image: url('../assets/Imagen Galeria 3.jpg');
+}
+.c{
+    background-image: url('../assets/Imagen Galeria 4.jpg');
+}
+.d{
+    background-image: url('../assets/Imagen Galeria 5.jpg');
+}
+.e{
+    background-image: url('../assets/Imagen Galeria 1.jpg');
+}
+.f{
+    background-image: url('../assets/Imagen Galeria 6.jpg');
+}
+.g{
+    background-image: url('../assets/Imagen Galeria 7.jpeg');
+}
+
+.contract {
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.hire_me{
+    background: var(--rojoO);
+    height: 100%;
+    width: 55%;
+    padding: 40px 160px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hire_me h3 {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: var(--blanco);
+    margin-bottom: 25px;
+}
+.hire_me p {
+    font-size: 22px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    color: var(--blanco);
+    margin-bottom: 15px;
+}
+.hire_me .buttons2{
+    margin-top: 40px;
+    display: flex;
+    gap: 60px;
+}
+.hire_me .buttons2 a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 20px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    background: var(--negro);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.hire_me .buttons2 a:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+    transition: .5s ease-in-out;
+}
+
+.img_contract{
+    width: 45%;
+    height: 100%;
+    background: url('../assets/Profesional.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_contract div{
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, .5);
+}
+
+/* Carrousel de imagenes*/
+
+.section_carrusel {
+    padding: 40px 0;
+}
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px ;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+
+.texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(138, 63, 63, 0.61);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 15px var(--negro);
+    padding-top: 40px;
+    color: var(--gris);
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.texto p{
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    align-items: center;
+    padding: 20px;
+    color:var(--gris);
+    font-size: 0px;
+    font-weight: 300;
+}
+
+.imagenes .texto{
+    width: 600px;
+    height: 100px;
+    transition: 1s;
+}
+
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(138, 63, 63, 0.71);
+}
+
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+
+    text-shadow: 0px 0px 10px var(--negro);
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: var(--negro);
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--rojoO) ;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1023px) {
+    .color {
+        width: 50% !important;
+        
+    }
+    .content_banner p {
+        width: 60%;
+    }
+    .professionals{
+        height: 500px;
+        padding: 20px 40px;
+    }
+    .professionals h3{
+        font-size: 30px;
+    }
+    .info {
+        align-items: center;
+        justify-content: center;
+    }
+    .info span{
+        font-size: 40px;
+    }
+    .info h4{
+        font-size: 24px;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .galery {
+        width: 90%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .galery .galery_top{
+        gap: 20px;
+    }
+    .galery .galery_bottom{
+        gap: 20px;
+    }
+    .contract {
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+    .hire_me{
+        background: var(--rojoO);
+        height: 100%;
+        width: 55%;
+        padding: 40px 80px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hire_me h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .hire_me p {
+        font-size: 18px;
+    }
+    .hire_me .buttons2{
+        margin-top: 25px;
+        gap: 40px;
+    }
+    .hire_me .buttons2 a{
+        font-size: 18px;
+    }
+    .img_contract{
+        width: 45%;
+        height: auto;
+        background: url('../assets/Profesional.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .img_contract div{
+        width: 100%;
+        height: 100%;
+        background: rgba(13, 13, 13, .5);
+    }
+    .section_carrusel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .carrusel{
+        width: 80%;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .img{
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+        height: 400px;
+        width: 100%;
+        border-radius: 5px ;
+    }
+    .texto h3{
+        padding-top: 30px;
+        font-size: 22px;
+    }
+    .texto p{
+        padding: 15px;
+    }
+    
+    .imagenes .texto{
+        width: 40%;
+        height: 60px;
+    }
+    .imagenes:hover .texto{
+        transition: height 1s, transform 1s, background-color 1s;
+        transform: translateY(-50px);
+        height: 300px;
+    }
+    
+    .imagenes:hover .texto p{
+        font-size: 18px;
+    }
+}
+
+/*Movil*/
+@media only screen and (max-width: 640px) {
+    .banner .background .border_dark .content_banner {
+        padding: 10px;
+        padding-left: 10px;
+    }
+    .color {
+        width: 90% !important;
+        
+    }
+    .content_banner p {
+        width: 80%;
+    }
+    .content_banner p {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    .content_banner .buttons {
+        display: flex;
+        gap: 15px;
+        padding-left: 15px;
+    }
+    .buttons a{
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .professionals{
+        height: auto;
+        padding: 40px 20px;
+    }
+    .professionals h3{
+        font-size: 28px;
+        text-align: center;
+    }
+    .info span{
+        font-size: 30px;
+    }
+    .info h4{
+        font-size: 20px;
+    }
+    .info p{
+        font-size: 18px;
+    }
+    .images {
+        height: 1600px;
+    }
+    .images h3 {
+        font-size: 28px;
+    }
+    .galery {
+        height: auto;
+    }
+    .galery .galery_top{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 150px);
+    }
+    .galery .galery_bottom{
+        height: auto;
+        flex-direction: column;
+    }
+    .galery_bottom .bottom_left{
+        width: 100%;
+        height: 200px;
+    }
+    .galery_bottom .bottom_right{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 150px);
+    }
+    .contract {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+    .hire_me{
+        height: 50%;
+        width: 100%;
+        padding: 40px 50px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img_contract{
+        width: 100%;
+        height: 50%;
+    }
+    .carrusel{
+        width: 95%;
+        margin: 0;
+    }
+    .img{
+        height: 300px;
+        margin: 0;
+    }
+    .texto{
+        visibility: hidden;
+    }
+}
